@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+background-color:burlywood;
+}
+nav{
+    background-color:yellowgreen;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a :hover{
+    background-color: white;
+    color:black
+}
+.banner{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url('./img1/5.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .título{
+    color:#fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.texto .sub_titulo{
+    color:#fff;
+    font-size: 58px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.texto .botoes button.n-overlay{
+    color:white;
+    background: none;
+    border: 2px solid white;
+}
+.texto .botoes button.n-overlay:hover{
+    color:black;
+    background-color: white;
+
+}
+.texto .botoes button.overlay{
+    background: white;
+    color:black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+@keyframes vibrar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+
+    }
+    100%{
+        transform:  scale(1);
+    }
+}
+p{
+    line-height: 21.82px;
+    padding: 0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sessao_título{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+.sessao_titulo{
+    text-align:center ;
+    font-size: 3rem;
+    margin-bottom:10px ;
+
+}
+.Somos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.Somos_corpo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.somos_texto{
+    flex: 6 1 160px;
+}
+.Somos_imagem{
+    
+   width: 320%;
+   height: 205%;
+}
+.img{
+    display: block;
+    max-width: 100%;
+}
+/* os cuidados*/
+.cuidado_corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cuidado{
+    width: 280px;
+    margin: 0 20px;
+}
+.cuidado_titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+.serviço_corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.serviço{
+    max-width: 240px;
+    margin: 10px;
+}
+.serviço_titulo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin: center;
+}
+.serviço_titulo::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+.serviço:nth-of-type(3n+1).serviço_titulo::before{
+    background-color: var(--verde-claro);
+}
+.serviço:nth-of-type(3n+2).serviço_titulo::before{
+    background-color: var(--rosa-escuro);
+}
+.serviço:nth-of-type(3n+3).serviço_titulo::before{
+    background-color: var(--verde-escuro);
+}
+.footer{
+    background-color: var(--rosa-claro);
+    display: flex;
+    justify-content: space-around;
+    padding: 55px calc((100% -  960px)/2);
+}
+.footer_copyright .footer_Logo{
+    padding-left: 10px; 
+    padding-right: 10px;
+    
+}
